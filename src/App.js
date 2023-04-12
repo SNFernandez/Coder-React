@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
 <NavE/>
-<ItemListE greeting={'Bienvenidos a la 1era pre entrega'}/>
+<ItemListE greeting={'Bienvenidos a la 2da pre entrega'}/>
     </div>
   );
 }

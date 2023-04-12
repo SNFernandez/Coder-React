@@ -1,0 +1,48 @@
+.title {
+    font-size: 56px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transition: all .5s;
+}
+
+.title:hover {
+    color: rgb(219, 255, 255);
+}
+
+.title-h1 {
+    margin: .5em 0;
+    transition: all .5s;
+}
+
+.title-h1:hover {
+    transform: scale(1.15);
+}
+
+.list {
+    background-color: transparent;
+    padding: 6px 8px;
+    margin: 0px 12px;
+    border: solid 1.5px rgb(255, 255, 255);
+    color: rgb(240, 250, 252);
+    border-radius: 25px;
+    font-size: 1.05em;
+    transition: all 0.35s;
+}
+
+.list:hover {
+    background-color: #211f2c;
+    transform: scale(1.05);
+}
+
+.hr-linea {
+    max-width: 95%;
+    margin: 20px auto;
+}
+.container-cart{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 20px;
+    margin-top: -70px;
+}
