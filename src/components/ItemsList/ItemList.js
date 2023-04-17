@@ -1,9 +1,11 @@
 import './ItemList.css'
-const ItemList = ({ greeting }) => {
-    return(
-     <div>
-        <h1 className='entrega'>{greeting}</h1>
-     </div>
+import Item from '../Item/Item'
+
+const ItemList = ({ products }) => {
+    return (
+        <div className='container-products'>
+            {products.map(prod => <Item key={prod.id}{...prod}/>)}
+        </div>
     )
 }
 export default ItemList

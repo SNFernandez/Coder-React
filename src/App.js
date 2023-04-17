@@ -1,12 +1,15 @@
 import './App.css';
 import NavE from './components/NavE/NavE';
-import ItemListE from './components/ItemsList/ItemList';
-
+import ButtonCart from './components/Cart/ButtonCart/ButtonCart';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContiner/ItemDetailContainer';
 function App() {
   return (
     <div className="App">
 <NavE/>
-<ItemListE greeting={'Bienvenidos a la 2da pre entrega'}/>
+<ButtonCart/>
+<ItemListContainer/>
+<ItemDetailContainer/>
     </div>
   );
 }

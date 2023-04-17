@@ -5,12 +5,12 @@ const NavE = () => {
         <header>
             <nav>
                 <div>
-                    <h1 className='title-h1'><span className='title'>Ecommerce</span></h1>
+                    <h1 className='title-h1'><span className='title'>Sneakers Flow</span></h1>
                     <div className='container-cart'><CartE /></div>
-                    <button className='list'>Microfono</button>
-                    <button className='list'>Teclado</button>
-                    <button className='list'>Auricular</button>
-                    <button className='list'>Mouse</button>
+                    <button className='list'>Inicio</button>
+                    <button className='list'>Nike</button>
+                    <button className='list'>Adidas</button>
+                    <button className='list'>Nosotros</button>
                 </div>
                 <hr className='hr-linea'></hr>
             </nav>
