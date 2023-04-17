@@ -1,21 +1,28 @@
 import { useState, useEffect } from "react";
-import { getProducts } from '../../products'
+import { getProducts, getProductsMarca } from '../../products'
 import ItemList from "../ItemsList/ItemList";
+import { useParams } from "react-router-dom";
+
 const ItemListContainer = () => {
     const [products, setProducts] = useState([])
 
+    const {marca} = useParams ()
+
     useEffect(() =>{
-        getProducts()
+
+        const funcionProductos = marca ? getProductsMarca : getProducts
+
+
+        funcionProductos(marca)
         .then(Response => setProducts(Response))
         .catch(error=>console.error(error))
-    }, [])
+    }, [marca])
 
 
 
 
     return (
         <div>
-            <h2>Productos</h2>
             <ItemList products={products}/>
         </div>
     )

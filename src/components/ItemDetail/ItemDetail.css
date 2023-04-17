@@ -1,0 +1,30 @@
+.containerItem{
+    max-width: 40vw;
+    height: auto;
+    background-color: #FEFEEC;
+    border-radius: 6px;
+    margin: 50px 0px;
+    padding: 15px 0px;
+}
+.imgdetail{
+    max-width: 40vw;
+    height: 52vh;
+    object-fit: contain;
+}
+.infoP{
+    font-size: 45px;
+    color: #1d1c25;
+    font-weight: 900;
+}
+.infoS{
+    font-size: 35px;
+    color: #1d1c25;
+    font-weight: 700;
+}
+.infoT{
+    font-size: 20px;
+    max-width: 35vw;
+    font-weight: 500;
+    margin: auto;
+    color: #1d1c25;
+}

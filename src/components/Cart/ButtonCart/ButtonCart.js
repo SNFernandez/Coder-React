@@ -20,7 +20,7 @@ const ButtonCart = () => {
     };
 
     return (
-        <div>
+        <div className='containerbtn'> 
             <div>
                 <button onClick={decrementar} className='mas-menos'>-</button>
                 <span className='cant'>{contador}</span>

@@ -1,15 +1,22 @@
 import './App.css';
 import NavE from './components/NavE/NavE';
-import ButtonCart from './components/Cart/ButtonCart/ButtonCart';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContiner/ItemDetailContainer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
     <div className="App">
-<NavE/>
-<ButtonCart/>
-<ItemListContainer/>
-<ItemDetailContainer/>
+      <BrowserRouter>
+        <NavE />
+        <Routes>
+
+          <Route path='/' element={<ItemListContainer/>}/>
+          <Route path='/categoria/:marca' element={<ItemListContainer/>} />
+          <Route path='/item/:Id' element={<ItemDetailContainer/>}/>
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
