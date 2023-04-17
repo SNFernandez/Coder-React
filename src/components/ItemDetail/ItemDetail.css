@@ -1,14 +1,21 @@
 .containerItem{
-    max-width: 40vw;
+    max-width: 50vw;
     height: auto;
     background-color: #FEFEEC;
-    border-radius: 6px;
-    margin: 50px 0px;
+    border-radius:  0px  80px  80px 0px;
+    margin: 20px 0px;
     padding: 15px 0px;
 }
+.containerItem-1{
+    max-width: 51.5vw;
+    height: auto;
+    border-radius:  20px  80px  80px 20px;
+    border: 6px solid #FEFEEC;
+    margin: 50px 0px;
+}
 .imgdetail{
-    max-width: 40vw;
-    height: 52vh;
+    max-width: 50vw;
+    height: 50vh;
     object-fit: contain;
 }
 .infoP{

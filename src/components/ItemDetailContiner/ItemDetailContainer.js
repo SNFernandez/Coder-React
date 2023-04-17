@@ -9,13 +9,13 @@ import { useParams } from 'react-router-dom';
 const ItemDetailContainer = () => {
     const [products, setProducto] = useState(null)
 
-const {Iditem} = useParams ()
+const {Id} = useParams ()
 
     useEffect(() => {
-        getUnProducto(Iditem)
+        getUnProducto(Id)
             .then(res => {setProducto(res)})
             .catch(error=>{console.error(error)})
-    }, [Iditem])
+    }, [Id])
 
     return (
         <div>
