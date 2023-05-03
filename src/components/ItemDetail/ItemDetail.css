@@ -1,5 +1,5 @@
 .containerItem {
-    max-width: 50vw;
+    max-width: 60vw;
     height: auto;
     background-color: #FEFEEC;
     border-radius: 0px 80px 80px 0px;
@@ -8,7 +8,7 @@
 }
 
 .containerItem-1 {
-    max-width: 51.5vw;
+    max-width: 61.5vw;
     height: auto;
     border-radius: 20px 80px 80px 20px;
     border: 7px solid #FEFEEC;
@@ -16,8 +16,8 @@
 }
 
 .imgdetail {
-    max-width: 50vw;
-    height: 50vh;
+    max-width: 65vw;
+    height: 55vh;
     object-fit: contain;
 }
 
@@ -37,6 +37,35 @@
     font-size: 20px;
     max-width: 35vw;
     font-weight: 500;
-    margin: auto;
+    margin:  auto;
     color: #1d1c25;
+}
+.link-ter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 16vw;
+    height: 6.5vh;
+    color: #FEFEEC;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #1d1c25;
+    border-radius: 8px;
+    border: none;
+    transition: all .5s;
+}
+.link-ter:hover{
+        transform: scale(0.96);
+        background-color: #FEFEEC;
+        color: #1d1c25;
+        border: solid 4px #1d1c25;
+        cursor: pointer;
+    
+}
+.link-container{
+display: flex;
+justify-content: center;
+position: relative;
 }
