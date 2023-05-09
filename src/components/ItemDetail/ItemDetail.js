@@ -6,7 +6,7 @@ import { CartContext } from '../../context/CartContext'
 
 
 
-const ItemDetail = ({ Id, name, precio, img, marca, description, maxStock }) => {
+const ItemDetail = ({ id, name, precio, img, marca, description, maxStock }) => {
     const [add, setAdd] = useState(0)
 
     const { agregarProducto } = useContext(CartContext)
@@ -14,7 +14,7 @@ const ItemDetail = ({ Id, name, precio, img, marca, description, maxStock }) => 
 
     const cantidad = (cantidad) => {
         setAdd(cantidad)
-        const item = { Id, name, precio }
+        const item = { id, name, precio }
         agregarProducto(item, cantidad)
     }
 
@@ -24,7 +24,7 @@ const ItemDetail = ({ Id, name, precio, img, marca, description, maxStock }) => 
                 <h2 className='infoP'>{name}</h2>
                 <h3 className='infoS'>${precio}</h3>
                 <h3 className='infoS'>Marca: {marca}</h3>
-                <h3 className='infoT'>ID: {Id}</h3>
+                <h3 className='infoT'>ID: {id}</h3>
                 <img className='imgdetail' src={img} alt={name}></img>
                 {
                     add > 0 ? (<Link to={"/cart"}><div className='link-container'><button className='link-ter'>Terminar Compra</button></div></Link>) : (<ButtonCart minStock={1} maxStock={maxStock} add={cantidad} />)

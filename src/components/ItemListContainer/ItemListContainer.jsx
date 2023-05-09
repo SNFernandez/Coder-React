@@ -22,7 +22,7 @@ const ItemListContainer = () => {
     }, [marca])*/
 
     useEffect(() => {
-        const misProductos = marca ? query(collection(db, 'products'), where("id", '==', marca)) : collection(db, "products")
+        const misProductos = marca ? query(collection(db, 'products'), where("marca", '==', marca)) : collection(db, "products")
 
         getDocs(misProductos)
             .then(res => {
@@ -33,7 +33,7 @@ const ItemListContainer = () => {
                 setProducts(nuevosProductos)
             })
             .catch(error => console.log(error))
-    }, [])
+    }, [marca])
 
 
     return (
