@@ -3,6 +3,8 @@ import { getUnProducto } from '../../products';
 import { useState, useEffect } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
+import { db } from '../../services/firebase/config';
+import { getDocs,doc } from 'firebase/firestore';
 
 
 
@@ -11,11 +13,24 @@ const ItemDetailContainer = () => {
 
 const {Id} = useParams ()
 
-    useEffect(() => {
+    /*useEffect(() => {
         getUnProducto(Id)
             .then(res => {setProducto(res)})
             .catch(error=>{console.error(error)})
-    }, [Id])
+    }, [Id])*/
+
+    useEffect (() => {
+const nuevoDoc = doc (db, "products", Id)
+
+getDocs(nuevoDoc)
+.then(res => {
+    const data = res.data()
+    const nuevoProducto = {id: res.id, ...data}
+    setProducto(nuevoProducto)
+})
+.catch(error =>console.log(error))
+
+    },[Id])
 
     return (
         <div>
