@@ -1,0 +1,33 @@
+.item-name{
+    color: #FEFEEC;
+    font-size: 50px;
+    font-weight: 900;
+    transition: all .5s;
+}
+.cantidad{
+    color:#fefeec96;
+    font-size: 20px;
+    transition: all .5s;
+}
+.item-precio{
+    color:#fefeec96;
+    font-size: 24px;
+    transition: all .5s;
+}
+.item-name:hover{
+    transform: scale(0.95);
+}
+.cantidad:hover{
+    transform: scale(0.95);
+}
+.item-precio:hover{
+    transform: scale(0.90);
+}
+.item-img{
+    max-width:25vw;
+    height: auto;
+    transition: all .5s;
+}
+.item-img:hover{
+    transform: scale(0.90);
+}
