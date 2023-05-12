@@ -7,6 +7,24 @@ export const CartProvider = ({ children }) => {
 
     const [Cart, setCart] = useState([])
     console.log(Cart)
+    /*const agregarProducto = (item, cantidad) => {
+        const newObj = {
+            ...item,
+            cantidad
+        }
+        if (enCart(newObj.id)) {
+            Cart.map(e => {
+                if (e.id === newObj.id) {
+                    e.cantidad += newObj.cantidad
+                }
+                //retornamos 
+                return (e)
+            })
+        }
+        else {
+            setCart([...Cart, newObj])
+        }
+    }*/
     const agregarProducto = (item, cantidad) => {
 
         if (!enCart(item.Id)) {
@@ -27,7 +45,6 @@ export const CartProvider = ({ children }) => {
 
     const enCart = (Id) => {
         return Cart.some(prod => prod.Id === Id)
-
     }
 
     return (

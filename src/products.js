@@ -1,11 +1,11 @@
-const products = [
+/*const products = [
     {
         Id: '1',
         name: 'Campus 00S',
         precio: 50000,
         img: '../Images/adidas-campus-00s.png',
         marca: 'Adidas',
-        maxStock: 15 ,
+        maxstock: 15 ,
         description: 'Lucen un exterior de gamuza premium en tonos opacos, destacándo la mediasuela blanco hueso, una conexión clara con el legado Campus.'
     },
     {
@@ -14,7 +14,7 @@ const products = [
         precio: 65000,
         img: '../Images/adidas-miss-piggy-and-kermit.png',
         marca: 'Adidas',
-        maxStock: 15 ,
+        maxstock: 15 ,
         description: 'Este producto está hecho con Primegreen, una serie de materiales reciclados de alto desempeño. El 50 % del exterior está hecho con material reciclado. '
     },
     {
@@ -23,7 +23,7 @@ const products = [
         precio: 42000,
         img: '../Images/adidas-superstar.png',
         marca: 'Adidas',
-        maxStock: 15 ,
+        maxstock: 15 ,
         description: 'Superstar representan a los amantes de la moda urbana. Su distintiva silueta con puntera con relieve sigue relevante, brindando estilo y protección'
     },
     {
@@ -32,7 +32,7 @@ const products = [
         precio: 55000,
         img: '../Images/nike-air-force-1.png',
         marca: 'Nike',
-        maxStock: 15 ,
+        maxstock: 15 ,
         description: 'La fusión de la comodidad de la duela y un estilo externo a la cancha le da un giro fresco.'
     },
     {
@@ -41,7 +41,7 @@ const products = [
         precio: 67000,
         img: '../Images/nike-air-max-dawn.png',
         marca: 'Nike',
-        maxStock: 15 ,
+        maxstock: 15 ,
         description: 'el Nike Air Max Dawn está cuidadosamente confeccionado con al menos un 20% de materiales reciclados por peso.'
     },
     {
@@ -50,7 +50,7 @@ const products = [
         precio: 48000,
         img: '../Images/nike-sb-bruin-react-border.png',
         marca: 'Nike',
-        maxStock: 15 ,
+        maxstock: 15 ,
         description: 'La entresuela integrada Nike React está confeccionada con una espuma ligera y duradera que proporciona una pisada suave y eficaz.'
     }
 ]
@@ -80,4 +80,4 @@ return new Promise (resolve =>{
     },150)
 })
 
-}
+}*/
