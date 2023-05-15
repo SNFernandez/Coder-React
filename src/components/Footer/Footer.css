@@ -35,9 +35,9 @@
 }
 
 .info-lineas {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 500;
-    margin-top: 8px;
+    margin-top: 25px;
     transition: .35s linear;
     position: relative;
 }
@@ -48,9 +48,9 @@
 }
 
 .marca {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
-    margin: 8px 0;
+    margin: 12px 0;
     transition: all .3s;
 }
 
@@ -83,4 +83,5 @@
     transition: .4s cubic-bezier(.95, .32, .37, 1.21);
     position: relative;
     z-index: 1;
+    font-size: 40px;
 }
